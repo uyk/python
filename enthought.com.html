@@ -1,0 +1,943 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Enthought Scientific Computing Solutions</title>
+        
+        <meta name="canonical-page-name" content="enthought-home">
+        <meta name="page-title" content="Enthought Home">
+        <meta name="description" content="Enthought is a global leader in scientific and analytic computing software, training, and consulting, with particular expertise in the Python programming language.">
+
+
+        <meta name="viewport" content="width=1100, initial-scale=1.0">
+        <link rel="shortcut icon" href="//static.enthought.com/etw/img/favicon_32.ico">
+        <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,200italic,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://static.enthought.com/etw/CACHE/css/8093e35d40f5.css" type="text/css" />
+        <script type="text/javascript" src="https://static.enthought.com/etw/CACHE/js/1c5182657024.js"></script>
+
+        
+        
+  <style type="text/css">
+  #preload {
+    display: none;
+    }
+
+  .tab-content {
+    overflow: hidden;
+  }
+  .nav-tabs {
+    border-bottom: 0px;
+    border-top: 1px solid #fff;
+    width: 805px; /*hard coded for current tabs width */
+    margin: 0 auto;
+  }
+  .nav-tabs > li {
+    margin-bottom:0;
+    margin-top:-1px;
+    font-size:18px;
+  }
+  .tab-pane {
+    height: 360px;
+    padding: 20 0px;
+  }
+  .tab-message {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .tab-message a:link {
+    color: #fff;
+  }
+
+  .nav-tabs > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 20px;
+    background-color: #ddd;
+    color: #000;
+    border: 1px solid transparent;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+  }
+
+  .nav-tabs a:hover {
+    background-color: #cc0000;
+  }
+
+  body #home {
+    background:transparent  scroll no-repeat center top
+  }
+
+  .traininglist {
+    margin: 0;
+    list-style: none;
+  }
+
+  .traininglist li {
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .traininglist li i.icon-calendar,
+  .traininglist li i.icon-pushpin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px 0;
+    font-size: 24px;
+  }
+
+  .traininglist li small,
+  .traininglist li span.time {
+    display: block;
+    font-family: "Source Sans Pro", "Droid Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #555555;
+  }
+
+  .traininglist li time {
+    font-weight: bold;
+  }
+
+  .traininglist li a {
+    font-size: 16px;
+    color: #293779;
+  }
+
+  .traininglist li a:hover {
+    color: #3e56bd;
+    text-decoration: none;
+  }
+  </style>
+
+    </head>
+    <body>
+        <div class="page">
+            
+                
+      <header>
+        <div class="container">
+          <div class="top-utility-links clearfix">
+            <div class="user-info pull-right" style="width:42rem; height:2.2rem; overflow:hidden;">
+              <iframe src="https://store.enthought.com/user_account/"
+                      style="border:0 none;width:100%;height:2.2rem;overflow:hidden;"
+                      
+                      seamless="seamless"
+                      scrolling="no" verticalscrolling="no" horizontalscrolling="no"
+                      allowtransparency="true"
+                      frameborder="0">
+                <p class="text-error">
+                  <i class="icon-warning-sign"></i>
+                  Some functionality is disabled due to your browser configuration.</p>
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <a href="/" class="homelink"><img class="enthought-logo" src="//static.enthought.com/etw/img/enthought-logo-w-tag.png?727afbf" alt="Enthought Logo"></a>
+          <nav id="mainNav" class="navbar pull-right" style="margin-right:-44px;margin-bottom:0;">
+            <div class="navbar-inner">
+              <ul class="nav">
+                
+<li class=" dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products</a>
+  <ul class="dropdown-menu">
+    <li style="color: #253370; padding-left: 0.5em; font-weight: bold;">Enthought Canopy</li>
+    <li class="home "><a href="/products/canopy/">Canopy Overview</a></li>
+    <li class=""><a href="/products/canopy/features/" title="">Features</a></li>
+    <li class=""><a href="/products/canopy/canopy-python-debugger/" title="">&nbsp;&nbsp;- Graphical Python Debugger</a></li>
+    <li class=""><a href="/products/canopy/faq/" title="">FAQ</a></li>
+    <li class=""><a href="/products/canopy/package-index/" title="">Canopy Package Index</a></li>
+    <li class=""><a href="/products/canopy/compare-subscriptions/" title="">Compare Subscriptions</a></li>
+    <li class=""><a href="/store" title="">Get Canopy</a></li>
+    <li class="divider"></li>
+    <li class=""><a href="/products/canopy-geoscience/" style="color: #253370; padding-left: 0.5em; font-weight: bold; padding-left: 0.5em; line-height: 1.2em;">Canopy Geoscience</a></li>
+    <li class=""><a href="/products/virtual-core/" style="color: #253370; padding-left: 0.5em; font-weight: bold; padding-left: 0.5em; line-height: 1.2em;">Virtual Core</a></li>
+    <li class="divider"></li>
+    <li style="color: #253370; padding-left: 0.5em; font-weight: bold;">PyXLL (Python for Excel)</li>
+    <li class="home "><a href="/products/pyxll/">PyXLL Overview</a></li>
+    <li class=""><a href="/products/pyxll/introduction">How it Works</a></li>
+    <li class=""><a href="/products/pyxll/faq">FAQ</a></li>
+    <li class=""><a href="http://enthought.pyxll.com/" title="">Documentation</a></li>
+    <li class=""><a href="https://support.enthought.com/categories/20077030-PyXLL" title="">Support</a></li>
+    <li class=""><a href="/products/pyxll/store" title="">Get PyXLL</a></li>
+    <li class="divider"></li>
+    <li class=""><a href="/products/epd" style="padding-left: 0.5em; line-height: 1.2em;">Enthought Python Distribution (EPD)</a></li>
+    <li class="divider"></li>
+    <li><a class="" href="http://code.enthought.com" target="_blank" style="padding: 0;"><span style="text-align: left; padding-left: 0.5em;">Enthought Tool Suite (ETS)</span></a></li>
+  </ul>
+</li>
+<li class=" dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Training</a>
+  <ul class="dropdown-menu">
+    <li style="color: #253370; padding-left: 0.5em; font-weight: bold;">Training
+      on Demand</li>
+    <li class="">
+      <a href="/services/training/python-training-on-demand">Overview</a></li>
+    <li>
+      <a href="https://training.enthought.com"
+         target="_blank">Training on Demand Website</a></li>
+    <li>
+      <a href="https://training.enthought.com/courses"
+         target="_blank">Try/Buy
+        Training on Demand</a></li>
+    <li class="divider"></li>
+    <li style="color: #253370; padding-left: 0.5em; font-weight: bold;">Onsite
+      Training</li>
+    <li class="home ">
+      <a href="/services/training/">Overview &amp; Schedule</a></li>
+    <li class="">
+      <a href="/services/training/python-core-foundations">Python Foundations: 3-Day Live Class</a></li>
+    <li class="">
+      <a href="/services/training/python-foundations-6-week-core">Python Foundations: 6-Week Online Course</a></li>
+    <li class="">
+      <a href="/services/training/data-science">Python for Data Science</a></li>
+    <li class="">
+      <a href="/services/training/scientific">Python for Scientists, Analysts &amp; Engineers</a></li>
+    <li class="">
+      <a href="/services/training/finance">Python for Finance</a></li>
+    <li class="">
+      <a href="/services/training/geoscience">Python for Geoscience</a></li>
+    <li class="divider"></li>
+    <li class="">
+      <a href="/services/training/instructors">Training Instructors</a></li>
+    <li class="divider"></li>
+    <li class="">
+      <a href="/services/training/general-info/">General
+        Information</a></li>
+  </ul>
+</li>
+<li class=" dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Consulting</a>
+  <ul class="dropdown-menu">
+    <li class="home consulting-home "><a href="/services/consulting">Consulting Overview</a></li>
+    <li class=""><a href="/services/consulting/case-studies/">Case Studies</a></li>
+  </ul>
+</li>
+<li class=" dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Company</a>
+  <ul class="dropdown-menu">
+    <li class="home "><a href="/company/">About Us</a></li>
+    <li class=""><a href="/company/team/support/">Team - Support</a></li>
+    <li class=""><a href="/company/team/devs/">Team - Developers</a></li>
+    <li class=""><a href="/company/values/" title="">Values</a></li>
+    <li class=""><a href="/company/careers/" title="">Careers</a></li>
+    <li class=""><a href="/services/consulting/case-studies/">Our Clients</a></li>
+    <li class="divider"></li>
+    <li class=""><a href="/company/news/" title="">News &amp; Events</a></li>
+    <li class=""><a href="http://blog.enthought.com" title="" target="_blank">Blog</a></li>
+  </ul>
+</li>
+<li class=" dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Contact</a>
+  <ul class="dropdown-menu">
+    <li class=""><a href="/contact/">General Inquiry &amp; Requests</a></li>
+    <li><a class="" href="https://support.enthought.com" title="" target="_blank">Support</a></li>
+  </ul>
+</li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+
+            
+            
+
+
+<div id="preload">
+   <img src="//static.enthought.com/etw/img/homepage-hero-canopy-bg.png?727afbf" width="1" height="1" alt="Enthought Canopy background" />
+   <img src="//static.enthought.com/etw/img/homepage-hero-canopy-image.png?727afbf" width="1" height="1" alt="Enthought Canopy" />
+   <img src="//static.enthought.com/etw/img/homepage-canopy-logo-white.png?727afbf" width="1" height="1" alt="Enthought Canopy" />
+
+   <img src="//static.enthought.com/etw/img/homepage-hero-pyxll-bg.png?727afbf" width="1" height="1" alt="Enthought PyXLL background" />
+   <img src="//static.enthought.com/etw/img/homepage-hero-canopy-image.png?727afbf" width="1" height="1" alt="Enthought PyXLL" />
+
+   <img src="//static.enthought.com/etw/img/homepage-hero-etod-bg.png?727afbf" width="1" height="1" alt="Enthought Training on Demand background" />
+   <img src="//static.enthought.com/etw/img/homepage-hero-etod-image.png?727afbf" width="1" height="1" alt="Enthought Training on Demand" />
+   <img src="//static.enthought.com/etw/img/Enthought-training-on-demand-logo-2014_grey-white-06.24.14.png?727afbf" width="1" height="1" alt="Enthought Training on Demand" />
+
+   <img src="//static.enthought.com/etw/img/homepage-hero-consult-bg.png?727afbf" width="1" height="1" alt="Enthought Consulting background" />
+   <img src="//static.enthought.com/etw/img/homepage-hero-canopy-image.png?727afbf" width="1" height="1" alt="Enthought Consulting" />
+</div>
+
+
+            <section id="billboard" class="jumbotron">
+
+              <div class="tab-content" style="color: #fff; ">
+
+              <!-- @start #canopy -->
+                <div class="tab-pane" id="canopy" style="background: url('//static.enthought.com/etw/img/homepage-hero-canopy-bg.png?727afbf') scroll no-repeat center top;">
+                  <div class="tab-message">
+                    <div style="float: left; width: 500px; padding: 1em 2em;">
+                      <a href="/products/canopy"><img src="//static.enthought.com/etw/img/homepage-hero-canopy-image.png?727afbf" alt="Enthought Canopy"></a>
+                    </div>
+                    <div style="float: left; width: 430px; min-height: 350px; margin: 0 0 0 12px; position: relative;">
+                      <a href="/products/canopy"><img src="//static.enthought.com/etw/img/homepage-canopy-logo-white.png?727afbf" style="width: 48%; margin: 20px auto 6px;display: block;" alt="Enthought Canopy"></a>
+                      <ul style="margin: 0 0 0 5rem;">
+                        <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0rem;">One-Click Python Deployment</li>
+                        <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.4rem;">Analysis Environment</li>
+                        <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.4rem;">Development Platform</li>
+                        <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.4rem;">Integrated Training on Demand</li></ul>
+                      <div class="center-txt" style="position: absolute; bottom: 12px; left: 68px">
+                        <button class="btn btn-success" style="background: #598EC0;padding: 12px 80px;font-size: 20px; text-shadow: none!important;" id="homeBuyCanopyBtn" onclick="javascript: document.location = 'https://store.enthought.com/'">Get Canopy <i class="icon-chevron-right" style="padding-left: 10px;"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- @end #canopy -->
+
+              <!-- @start #pyxll -->
+                <div class="tab-pane" id="pyxll" style="background: url('//static.enthought.com/etw/img/homepage-hero-pyxll-bg.png?727afbf') scroll no-repeat center top;">
+                  <div class="tab-message">
+                    <div style="float: left; width: 500px; padding: 1em 2em;">
+                      <a href="/products/pyxll"><img src="//static.enthought.com/etw/img/homepage-hero-pyxll-image.png?727afbf" alt="Enthought PyXLL"></a>
+                    </div>
+                    <div style="float: left; width: 430px; min-height: 350px; margin: 0 0 0 12px; position: relative;">
+                      <h2 style="font-size:58px; text-align:center;text-shadow: 1px 1px #333; margin: 2.5rem 0 1.25rem 0;">PyXLL</h2>
+                      <p style="color:#ddd; font-size:32px; line-height:36px; font-weight:100; text-shadow:none; text-align:center;">The Power of Python in Excel</li>
+                      <ul style="margin: 1rem 0 0 3rem;">
+                        <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.5rem;">Create powerful Excel add-ins</li>
+                        <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.5rem;">Easily deploy to others</li>
+                        <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.5rem;">Mitigate risk through version control</li>
+                      </ul>
+                      <div class="center-txt" style="position: absolute; bottom: 12px; left: 68px">
+                        <button class="btn btn-success" style="padding: 12px 80px;font-size: 20px; text-shadow: none!important;" id="homePyXLLBtn" onclick="javascript: document.location = '/products/pyxll'">Learn More <i class="icon-chevron-right" style="padding-left: 10px;"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- @end #pyxll -->
+
+              <!-- start #EToD -->
+                  <div class="tab-pane active" id="EToD" style="background: url('//static.enthought.com/etw/img/homepage-hero-etod-bg.png?727afbf') scroll no-repeat center top;">
+                    <div class="tab-message">
+                      <div style="float: left; width: 500px; padding: 1em 2em;">
+                        <a href="/services/training/python-training-on-demand"><img src="//static.enthought.com/etw/img/homepage-hero-etod-image.png?727afbf" alt="Enthought Python Training on Demand"></a>
+                      </div>
+                      <div style="float: left; width: 430px;  min-height: 350px; margin: 0 0 0 12px; position: relative;">
+                        <a href="/services/training/python-training-on-demand"><img src="//static.enthought.com/etw/img/Enthought-training-on-demand-logo-2014_grey-white-06.24.14.png?727afbf" style="width: 75%; margin: 2em 0 1.25em 3em" alt="Enthought Training on Demand"></a>
+                        <p style="padding: 0 0 0 30px;color:#ccc; font-size:20px; line-height:26px; font-weight:100;text-align:left;">Enthought Python Training on Demand takes our proven Python curriculum taught to thousands of scientists, engineers and analysts over the last decade and delivers it in a convenient, flexible online format.</p>
+                        <div class="center-txt" style="position: absolute; bottom: 12px; left: 68px">
+                          <button class="btn btn-warning" style="  padding: 12px 80px;font-size: 20px; text-shadow: none!important;" id="homeEToDBtn" onclick="javascript: document.location = '/services/training/python-training-on-demand'">Learn More <i class="icon-chevron-right" style="padding-left: 10px;"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              <!-- @end #EToD -->
+
+              <!-- @start #consult -->
+                <div class="tab-pane" id="consult" style="background: url('//static.enthought.com/etw/img/homepage-hero-consult-bg.png?727afbf') scroll no-repeat center top;">
+                  <div class="tab-message">
+                    <div style="float: left; width: 500px; padding: 1em 2em;">
+                      <a href="/services/consulting/"><img src="//static.enthought.com/etw/img/homepage-hero-consult-image.png?727afbf" alt="Enthought Scientific Software Consulting and Application Development"></a>
+                    </div>
+                    <div style="float: left; width: 430px;  min-height: 350px; margin: 0 0 0 12px; position: relative;">
+                      <h2 style="color:#eee; font-size: 32px; text-align:center; text-shadow: 1px 1px #333; line-height: 1.25em; margin: 1rem 0 1rem;">Software Consulting and <br />Application Development</h2>
+
+                      <p style="text-align: left;color:#ddd; font-size:20px; line-height:28px; font-weight:100; margin: 0 0 0 2rem;">Our data analysis, data visualization, and data processing expertise can help you:</p>
+                        <ul style="color:#ddd; font-size:16px; line-height:28px; font-weight:100; text-shadow:none;margin: 0 0 0 4rem;">
+                          <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.5rem;">Turn ideas into results</li>
+                          <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.5rem;">Translate data into actionable insight</li>
+                          <li style="color:#ddd; font-size:20px; line-height:24px; font-weight:100; margin-top: 0.5rem;">Fast track innovation</li>
+                        </ul>
+                      <div class="center-txt" style="position: absolute; bottom: 12px; left: 68px">
+                        <button class="btn btn-primary" style="  padding: 12px 80px;font-size: 20px; text-shadow: none!important;" id="homeEToDBtn" onclick="javascript: document.location = '/services/consulting/'">Learn More <i class="icon-chevron-right" style="padding-left: 10px;"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- @end #consult -->
+
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#EToD" data-toggle="tab">Python Training on Demand</a></li>
+                  <li><a href="#canopy" data-toggle="tab">Enthought Canopy</a></li>
+                  <li><a href="#pyxll" data-toggle="tab">Python&nbsp;for&nbsp;Excel</a></li>
+                  <li><a href="#consult" data-toggle="tab">Software Consulting</a></li>
+                </ul>
+
+              </div>
+
+            </section>
+
+
+            <section class="stripe2" id="summaries">
+                <div class="container">
+                    <div class="row">
+                        <div class="span4">
+                          <hgroup>
+                            <h2>Python for Excel</h2>
+                            <h4 class="serene">Free 30-day Trial</h4>
+                          </hgroup>
+
+                          <p>
+                            <span style="font-size:1.25em;line-height:1.5em;">
+                              <a href="https://www.enthought.com/products/pyxll/"
+                                 title="PyXLL -- Python for Excel">
+                              PyXLL is an Excel plug-in</a> that allows organizations
+                              to seamlessly deploy Python algorithms and models to
+                              all their Excel users.
+                            </span>
+                          </p>
+
+                          <p>
+                            <span style="font-size:1.25em;line-height:1.5em;">
+                              PyXLL has allowed investment banks to implement
+                              sophisticated financial models, online retailers
+                              to create interactive graphical analysis tools to
+                              segment customer data, and business analysts to
+                              update data models with real-time web data feeds.
+                            </span>
+                          </p>
+
+                          <p>
+                            <span style="font-size:1.25em; line-height: 1.5em;">
+                              All driven by Python, delivered via Excel.
+                            </span>
+                          </p>
+                          <p>
+                            <span style="font-size:1.25em; line-height: 1.5em;">
+                              <a href="https://store.enthought.com/pyxll"
+                                 title="Try PyXLL">Try PyXLL free for 30 days</a>
+                              to see how it can transform your organization's
+                              use of Excel.
+                            </span>
+                          </p>
+
+                            <a href="https://store.enthought.com/pyxll"
+                               target="_blank"
+                               class='btn btn-success'
+                              style='width: 280px;margin: 15px 10px;'>Try PyXLL
+                              Free <i class="icon-chevron-right"
+                                      style="padding-left: 5px;"></i>
+                            </a>
+                        </div>
+
+                        <div class="span4">
+                            <h2>Upcoming Live Training</h2>
+                            <p><a href="/services/training/">See full calendar of dates and locations</a></p>
+                            <ul class="traininglist">
+
+                            
+                              <li style="margin-bottom:24px;">
+                                <a href="/services/training/python-core-foundations"
+                                  class="text-info">Python Foundations: 3-Day Live Class</a>
+                                
+                                  
+                                    <div class="row">
+                                      <div class="span1" style="width:150px">
+                                        London, UK
+                                      </div>
+                                      <div class="pull-right right" style="margin-right:8px">
+                                        Nov 30 -
+                                        
+                                           Dec 02, 2015
+                                        
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="row">
+                                      <div class="span1" style="width:150px">
+                                        Austin, TX
+                                      </div>
+                                      <div class="pull-right right" style="margin-right:8px">
+                                        Dec 14 -
+                                        
+                                           16, 2015
+                                        
+                                      </div>
+                                    </div>
+                                  
+                                
+                              </li>
+                            
+                              <li style="margin-bottom:24px;">
+                                <a href="/services/training/python-foundations-6-week-core"
+                                  class="text-info">Python Foundations: 6-Week Online</a>
+                                
+                                  
+                                    <div class="row">
+                                      <div class="span1" style="width:150px">
+                                        Virtual
+                                      </div>
+                                      <div class="pull-right right" style="margin-right:8px">
+                                        Jan 18 -
+                                        
+                                           Feb 29, 2016
+                                        
+                                      </div>
+                                    </div>
+                                  
+                                
+                              </li>
+                            
+                              <li style="margin-bottom:24px;">
+                                <a href="https://www.enthought.com/services/training/data-science"
+                                  class="text-info">Python for Data Science</a>
+                                
+                                  
+                                    <div class="row">
+                                      <div class="span1" style="width:150px">
+                                        London, UK
+                                      </div>
+                                      <div class="pull-right right" style="margin-right:8px">
+                                        Nov 30 -
+                                        
+                                           Dec 04, 2015
+                                        
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="row">
+                                      <div class="span1" style="width:150px">
+                                        Austin, TX
+                                      </div>
+                                      <div class="pull-right right" style="margin-right:8px">
+                                        Dec 14 -
+                                        
+                                           18, 2015
+                                        
+                                      </div>
+                                    </div>
+                                  
+                                
+                              </li>
+                            
+                              <li style="margin-bottom:24px;">
+                                <a href="https://www.enthought.com/services/training/scientific"
+                                  class="text-info">Python for Scientists, Analysts and Engineers</a>
+                                
+                                  
+                                    <div class="row">
+                                      <div class="span1" style="width:150px">
+                                        Los Alamos, NM
+                                      </div>
+                                      <div class="pull-right right" style="margin-right:8px">
+                                        Jan 25 -
+                                        
+                                           29, 2016
+                                        
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="row">
+                                      <div class="span1" style="width:150px">
+                                        Los Angeles, CA
+                                      </div>
+                                      <div class="pull-right right" style="margin-right:8px">
+                                        Feb 15 -
+                                        
+                                           19, 2016
+                                        
+                                      </div>
+                                    </div>
+                                  
+                                
+                              </li>
+                            
+                              <li style="margin-bottom:24px;">
+                                <a href="https://www.enthought.com/services/training/finance"
+                                  class="text-info">Python for Finance</a>
+                                
+                                  <!-- No events available under this category for now -->
+                                  <div class="row">
+                                    <div class="span3">
+                                      Contact us to <a href="/services/training/#contact"
+                                        style="font-size:inherit;text-decoration:underline">request a course</a>.
+                                    </div>
+                                  </div>
+                                
+                              </li>
+                            
+                              <li style="margin-bottom:24px;">
+                                <a href="https://www.enthought.com/services/training/geoscience"
+                                  class="text-info">Python for Geoscience</a>
+                                
+                                  <!-- No events available under this category for now -->
+                                  <div class="row">
+                                    <div class="span3">
+                                      Contact us to <a href="/services/training/#contact"
+                                        style="font-size:inherit;text-decoration:underline">request a course</a>.
+                                    </div>
+                                  </div>
+                                
+                              </li>
+                            
+
+                            </ul>
+                            <a href="/services/training/#contact" class="btn" title="Request custom or onsite course" style="margin-left: 45px;">Request custom or onsite course <i class="icon-chevron-right" style="padding-left: 5px;"></i></a>
+                        </div>
+                        <div class="span4">
+                           <div class="row">
+                              <h2 class="span4">NEW! Graphical Debugger</h2>
+                              <h2 class="span4" style="font-size: 1.25em; line-height: 1.5em; margin-top: 0;"><a href="/products/canopy/">Enthought Canopy's</a> new <a href="/products/canopy/canopy-python-debugger/">graphical Python debugger</a> has powerful functionality to help you quickly find and fix code errors, understand and investigate code, and write new code more quickly.</h2>
+                            <!-- spotlight 1 -->
+                            <div class="span4 relative">
+                            <a href="/products/canopy/canopy-python-debugger/" target="_blank" class='btn btn-success' style='width: 280px;margin:  15px 10px;'>See Details <i class="icon-chevron-right" style="padding-left: 5px;"></i></a>
+                            <a href="/products/canopy/canopy-python-debugger/"><img src="//static.enthought.com/etw/img/interactive_graphical_python_code_debugger_in_enthought_canopy_thumb.png?727afbf" alt="Python for Data Science Training Classes" /></a>
+
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr class="soften">
+                </div>
+            </section>
+            <section class="stripe1">
+                <div class="container">
+                    <div class="row">
+                        <div class="span7 relative">
+                            <h4>Subscribe to Enthought Newsletter: </h4>
+                            
+                            <span class="alert" id="message" style="position:absolute;top:44px;left:220px;z-index:99;"></span>
+                            <div class="row">
+                                
+                                
+                                <form action="/newsletter/subscribe/" method="POST" rel="popover" id="subscribe_newsletter_form" class="span6"
+                                  data-trigger="hover" data-placement="top" data-title="No SPAM!"
+                                  data-content="Your email address will not be shared.">
+                                  <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='TW0p5fLf70ppEmJzpHWn9g202SeLm1gl' /></div>
+                                  
+                                  <div class="input-prepend input-append">
+                                    <span class="add-on"><i class="icon-envelope"></i></span>
+                                      <span>
+                                        <input type="email" class="span4" placeholder="Your email" name="email" required>
+                                      </span>
+                                    <input class="btn" type="submit" value="Subscribe"/>
+                                  </div>
+                                </form>
+                            </div> <!-- .row -->
+                          </span>
+                        </div>
+                        <div class="span5 social-connect">
+                            <h4>Connect: </h4>
+                            <a href="http://twitter.com/enthought" target="_blank"
+                                class="pull-left"><i class="icon-twitter"></i></a>
+                            <a href="https://plus.google.com/115370913428789517768/posts" target="_blank"
+                                class="pull-left"><i class="icon-google-plus"></i></a>
+                            <a href="http://www.linkedin.com/company/enthought" target="_blank"
+                                class="pull-left"><i class="icon-linkedin"></i></a>
+                            <a href="http://www.facebook.com/Enthought" target="_blank"
+                                class="pull-left"><i class="icon-facebook"></i></a>
+                            <a href="https://www.youtube.com/user/EnthoughtMedia" target="_blank"
+                                class="pull-left"><i class="icon-youtube"></i></a>
+                            <a href="http://blog.enthought.com/feed/rss/" target="_blank"
+                                class="pull-left"><i class="icon-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            
+                
+<div id="sitemap_container" style="display: none">
+    <div>
+        
+
+<div class="container">
+    <div class="row">
+        
+        <div class="span3">
+            <h5><strong><a href="/">Enthought Home</a></strong></h5>
+                
+        </div>
+        
+        <div class="span3">
+            <h5><strong><a href="/products/">Products</a></strong></h5>
+                
+                        <strong><a href="/products/canopy/">Enthought Canopy</a></strong><br />
+                            
+                                <a href="/products/canopy/features/">Features</a><br />
+                            
+                                <a href="/products/canopy/compare-subscriptions/">Compare Subscriptions</a><br />
+                            
+                                <a href="/products/canopy/package-index/">Canopy Package Index</a><br />
+                            
+                                <a href="/products/canopy/faq/">FAQ</a><br />
+                            
+                                <a href="/products/canopy/">Canopy Overview</a><br />
+                            
+                                <a href="https://store.enthought.com/">Get Canopy</a><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="#unresolved">EPD</a></strong><br />
+                            
+                                <a href="/products/epd/package-index/">EPD Package Index</a><br />
+                            
+                                <a href="/products/epd/">EPD Overview</a><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="/products/pyxll/">PyXLL (Python for Excel)</a></strong><br />
+                            
+                                <a href="/products/pyxll/introduction">How PyXLL Works</a><br />
+                            
+                                <a href="http://enthought.pyxll.com">PyXLL Documentation</a><br />
+                            
+                                <a href="https://support.enthought.com/categories/20077030-PyXLL">PyXLL Support</a><br />
+                            
+                                <a href="https://store.enthought.com/pyxll/">Buy PyXLL</a><br />
+                            
+                                <a href="/products/pyxll/download">PyXLL Download</a><br />
+                            
+                                <a href="https://www.enthought.com/products/pyxll/faq">PyXLL FAQ</a><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="https://www.enthought.com/products/virtual-core/">Virtual Core</a></strong><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="https://www.enthought.com/products/canopy-geoscience/">Canopy Geoscience</a></strong><br />
+                            
+                            <p></p>
+                
+        </div>
+        
+        <div class="span3">
+            <h5><strong><a href="/services/">Training</a></strong></h5>
+                
+                        <strong><a href="/services/training/">Onsite Training</a></strong><br />
+                            
+                                <a href="/services/training/general-info/">General Information</a><br />
+                            
+                                <a href="/services/training/scientific">Scientists &amp; Engineers</a><br />
+                            
+                                <a href="/services/training/finance">Financial Analysts</a><br />
+                            
+                                <a href="#unresolved">Geoscience</a><br />
+                            
+                                <a href="#unresolved">Custom Courses</a><br />
+                            
+                                <a href="/services/training/">Training Overview</a><br />
+                            
+                                <a href="https://www.enthought.com/services/training/techlog">Python for Extending Techlog</a><br />
+                            
+                                <a href="/services/training/data-science">Data Science</a><br />
+                            
+                                <a href="/services/training/python-core-foundations">Python Foundations: 3-Day Live Class</a><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="https://www.enthought.com/services/training/python-training-on-demand">Training on Demand</a></strong><br />
+                            
+                                <a href="https://www.enthought.com/services/training/python-training-on-demand">Training on Demand Overview</a><br />
+                            
+                                <a href="https://store.enthought.com/catalogue/category/enthought-training-on-demand-course-catalog_4/">Course Catalog</a><br />
+                            
+                                <a href="https://training.enthought.com/#/courses">Course Materials</a><br />
+                            
+                                <a href="https://store.enthought.com/catalogue/category/enthought-training-on-demand-course-catalog_4/">Buy Training on Demand</a><br />
+                            
+                            <p></p>
+                
+        </div>
+        
+        <div class="span3">
+            <h5><strong><a href="/services/consulting/">Consulting</a></strong></h5>
+                
+                        <strong><a href="/services/consulting/">Consulting Overview</a></strong><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="/services/consulting/case-studies/">Case Studies</a></strong><br />
+                            
+                                <a href="/services/consulting/case-studies/case_id">Case Study &amp;mdash; {{ case.title }}</a><br />
+                            
+                            <p></p>
+                
+        </div>
+        
+        <div class="span3">
+            <h5><strong><a href="/company/">Company</a></strong></h5>
+                
+                        <strong><a href="/company/team/">Team</a></strong><br />
+                            
+                                <a href="/company/team/support/">Support Team</a><br />
+                            
+                                <a href="/company/team/devs/">Developers</a><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="/company/values/">Values</a></strong><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="/company/careers/">Careers</a></strong><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="/company/news/">News</a></strong><br />
+                            
+                            <p></p>
+                
+                        <strong><a href="http://blog.enthought.com/">Blog</a></strong><br />
+                            
+                            <p></p>
+                
+        </div>
+        
+        <div class="span3">
+            <h5><strong><a href="/contact/">Contact</a></strong></h5>
+                
+                        <strong><a href="http://support.enthought.com/">Support</a></strong><br />
+                            
+                            <p></p>
+                
+        </div>
+        
+        <div class="span3">
+            <h5><strong><a href="/licenses/">Licenses</a></strong></h5>
+                
+        </div>
+        
+    </div>
+</div>
+
+  
+    </div>  
+</div>
+
+<style>
+    #sitemap_container {
+        background-color: #eee;
+        border-top: solid 1px #e1e1e1;
+    }
+
+</style>
+
+            
+
+            
+                
+<section id="breadcrumbs">
+    <div class="container">
+        <nav class="pull-left">
+            <ul class="breadcrumb">
+                <a href="/"><i class="icon-home"></i></a>
+                    
+                        <span class="divider">/</span>
+                        
+                            
+                                <li class="active">Enthought Home
+                            
+                        
+                    
+            </ul>
+        </nav>
+        <a class="pull-right closed breadcrumb sitemap-link" title="Open Sitemap"> <i class="icon-plus-sign"></i> Sitemap</a>
+    </div>
+</section>
+
+<style>
+    .sitemap-link:hover {
+        cursor: pointer;
+    }
+</style>
+
+            
+            
+                
+<footer>
+  <div class="container">
+    <nav class="navbar pull-left">
+      <a href="/" title="Enthought Home" class="brand" style="padding-top:6px;"><img class="canopy-logo" src="//static.enthought.com/etw/img/enthought-logo.png?727afbf" width="180" alt="Enthought Logo"></a>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="fineprint small gray">Copyright 2015, Enthought, Inc. All rights reserved. |
+      <a href="/company/#about" title="About us">About Enthought</a> &middot;
+      <a href="/licenses/" title="Product licenses">Product Licenses</a> &middot;
+      <a href="/contact/" title="Contact Enthought">Contact</a> &middot;
+      <a href="https://support.enthought.com" title="Support requests for Enthought products">Support</a>
+    </div>
+  </div>
+</footer>
+
+
+            
+        </div>
+
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        
+        
+        
+        
+        <script>window.jQuery || document.write('<script src="//static.enthought.com/etw/js/etw/jquery-1.9.0.min.js"><\/script>')</script>
+        <script type="text/javascript" src="//static.enthought.com/etw/js/jquery.hoverIntent.min.js"></script>
+        <script type="text/javascript" src="//static.enthought.com/etw/js/analytics.min.js"></script>
+        <script type="text/javascript" src="//static.enthought.com/etw/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//static.enthought.com/etw/js/script.js"></script>
+        <!-- Youtube and Vimeo API (improves video on touch devices and gives better HD support) -->
+        
+        <script type="text/javascript" src="//www.youtube.com/iframe_api"></script>
+        <script type="text/javascript" src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
+        <!-- Fresco -->
+        <script type="text/javascript" src="//static.enthought.com/etw/js/fresco/fresco.js"></script>
+        <link rel="stylesheet" type="text/css" href="//static.enthought.com/etw/css/fresco/fresco.css"/>
+
+        <script type="text/javascript">var STATIC_URL="//static.enthought.com/etw/";$(document).ready(function(){$(".bottip").tooltip({animation:true,placement:'bottom',trigger:'hover'});$("a[rel^=tip]").tooltip({animation:true,trigger:'hover',placement:'top'});$("[rel^=popover]").popover();$('.sitemap-link').click(function(){if($('#sitemap_container').is(":visible")){$('#sitemap_container').hide();}
+else{$('#sitemap_container').show();$(document.body).scrollTop($(document.body).scrollTop()+$('#sitemap_container').height());}})});</script>
+        
+<style>
+/* XXX: Embedded styles only for this page */
+/* move the "sub-headings" closer to its main heading
+when used within an hgroup */
+hgroup h3,
+hgroup h4 {
+  line-height: 1em;
+  margin-top: -20px;
+}
+
+hgroup .serene {
+  color: #62ae70; /* This is the color fern: see enthought color palette
+  https://github.com/enthought/design-assets/tree/master/branding/colors
+  */
+}
+</style>
+
+        
+<script type="text/javascript">
+    var STATIC_URL = "//static.enthought.com/etw/";
+    ajaxifyForm("#subscribe_newsletter_form", "#message");
+</script>
+<script type="text/javascript">(function(){var tabChange=function(){var tabs=$('.nav-tabs > li');var active=tabs.filter('.active');var next=active.next('li').length?active.next('li').find('a'):tabs.filter(':first-child').find('a');next.tab('show');}
+var tabCycle=setInterval(tabChange,10000)
+$(this).find('.nav-tabs a').click(function(e){e.preventDefault();clearInterval(tabCycle);$(this).tab('show')
+setTimeout(function(){tabCycle=setInterval(tabChange,10000);},15000);});})();</script>
+
+
+        
+        
+    </body>
+</html>
